@@ -1,7 +1,7 @@
-Test code
----------
+// Test code
+// ---------
 
-src/test/java/main/NewsFeedAcceptanceTest.java
+// src/test/java/main/NewsFeedAcceptanceTest.java
 
 package main;
 
@@ -38,8 +38,8 @@ public class NewsFeedAcceptanceTest {
 }
 
 
-Implementation code
---------------------
+// Implementation code
+// --------------------
 
 
 Application.java
@@ -60,7 +60,8 @@ public class Application {
     }
 }
 
-Config.java
+
+// Config.java
 
 package main;
 
@@ -72,7 +73,7 @@ public class Config {
 }
 
 
-Message.Java
+// Message.Java
 
 package main;
 
@@ -89,6 +90,9 @@ public class Message {
 }
 
 
+
+// UserId.java
+
 package main;
 
 public class UserId {
@@ -99,12 +103,12 @@ public class UserId {
 }
 
 
----------x------------
+// ---------x ------------
 
-Test code
----------
+// Test code
+// ---------
 
-ApplicationTest.java
+// ApplicationTest.java
 
 package main;
 
@@ -151,10 +155,10 @@ public class ApplicationTest {
 }
 
 
-Implementation code
--------------------
+// Implementation code
+//  -------------------
 
-NewsFeedReader.java
+// NewsFeedReader.java
 
 package main;
 
@@ -170,7 +174,7 @@ public class NewsFeedReader {
 }
 
 
-Application.java
+// Application.java
 
 package main;
 
@@ -194,7 +198,7 @@ public class Application {
 }
 
 
-Config.java
+// Config.java
 
 package main;
 
@@ -205,9 +209,9 @@ public class Config {
     }
 }
 
-----------x---------
+// --------x---------
 
-InMemoryDbReader.java
+// InMemoryDbReader.java
 
 public class InMemoryDbReader implements DbReader {
 .
@@ -228,12 +232,12 @@ public class InMemoryDbReader implements DbReader {
 .
 }
 
-----------x---------
+// --------x---------
 
-Test code
----------
+// Test code
+// ---------
 
-NewsFeedReaderIntegrationTest.java
+// NewsFeedReaderIntegrationTest.java
 
 package main;
 
@@ -273,7 +277,7 @@ public class NewsFeedReaderIntegrationTest {
 }
 
 
-ApplicationTest.java
+// ApplicationTest.java
 .
 .
 .
@@ -298,10 +302,10 @@ ApplicationTest.java
 }
 
 
-Implementation code
--------------------
+// Implementation code
+// -------------------
 
-Message.java
+// Message.java
 
 public class Message {
 
@@ -319,7 +323,8 @@ public class Message {
 }
 
 
-Application.java
+// Application.java
+
 public class Application {
 .
 .
@@ -337,7 +342,7 @@ public class Application {
 }
 
 
-NewsfeedReader.java
+// NewsfeedReader.java
 
 .
 .
@@ -364,7 +369,8 @@ public class NewsFeedReader {
 }
 
 
-UserId.java
+
+// UserId.java
 
 package main;
 
@@ -382,12 +388,12 @@ public class UserId {
 
 }
 
---------x---------
+// --------x---------
 
-Test code
----------
+// Test code
+// ---------
 
-NewsFeedReaderIntegrationTest.java
+// NewsFeedReaderIntegrationTest.java
 
 package main;
 
@@ -427,7 +433,7 @@ public class NewsFeedReaderIntegrationTest {
 }
 
 
-ApplicationTest.java
+// ApplicationTest.java
 .
 .
 .
@@ -458,8 +464,8 @@ public class ApplicationTest {
 
 }
 
-Implementation code
--------------------
+//  Implementation code
+//  -------------------
 
 public class Application {
     private final NewsFeedReader newsFeedReader;
@@ -475,9 +481,9 @@ public class Application {
 }
 
 
---------x---------
+// --------x---------
 
-NewsFeedAcceptanceTest.java
+// NewsFeedAcceptanceTest.java
 .
 .
 .
@@ -504,17 +510,18 @@ NewsFeedAcceptanceTest.java
 .
 }
 
---------x---------
+// --------x---------
 
-Test code
----------
-Rename NewsFeedReaderIntegrationTest to ThirdPartyNewsFeedReaderIntegrationTest
+// Test code
+// ---------
+
+// Rename NewsFeedReaderIntegrationTest to ThirdPartyNewsFeedReaderIntegrationTest
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-ThirdPartyNewsFeedReader.java
+//  ThirdPartyNewsFeedReader.java
 
 package main;
 
@@ -548,7 +555,7 @@ public class ThirdPartyNewsFeedReader implements NewsFeedReader {
 
 }
 
-Config.java
+// Config.java
 
 package main;
 
@@ -560,7 +567,9 @@ public class Config {
 }
 
 
-NewsFeedReader (turn it into an interface)
+// NewsFeedReader (turn it into an interface)
+
+// NewsFeedReader.java 
 
 package main;
 
@@ -575,12 +584,12 @@ public interface NewsFeedReader {
 }
 
 
---------x---------
+// --------x---------
 
-Test code
----------
+// Test code
+// ---------
 
-NewsFeedAcceptanceTest.java
+// NewsFeedAcceptanceTest.java
 
 .
 .
@@ -609,10 +618,10 @@ NewsFeedAcceptanceTest.java
 .
 }
 
---------x---------
+// --------x---------
 
-Test code
----------
+// Test code
+// ---------
 
 SortingNewsFeedReaderTest.java
 
@@ -678,10 +687,10 @@ public class SortingNewsFeedReaderTest {
 }
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-SortingNewsFeedReader.java
+// SortingNewsFeedReader.java
 
 package main;
 
@@ -717,7 +726,7 @@ public class SortingNewsFeedReader implements NewsFeedReader {
 }
 
 
-Config.java
+// Config.java
 
 package main;
 
@@ -728,19 +737,19 @@ public class Config {
     }
 }
 
-----------x----------
+// --------x----------
 
-Move NewsFeedTest.java to test-acceptance/java/main/....
+// Move NewsFeedTest.java to test-acceptance/java/main/....
 
-Move ThirdPartyNewsFeedReaderTest.java to test-integration/java/main/....
+// Move ThirdPartyNewsFeedReaderTest.java to test-integration/java/main/....
 
-----------x----------
+// --------x----------
 
 
-Test code
----------
+// Test code
+// ---------
 
-NewsFeedTest.java
+// NewsFeedTest.java
 
     @Test
     public void returnsLastFivePostedMessages() {
@@ -766,10 +775,10 @@ NewsFeedTest.java
     }
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-Application.java
+// Application.java
 
 .
 .
@@ -789,11 +798,12 @@ public class Application {
     }
 }
 
-----------x----------
+// ----------x----------
 
-Test code
----------
-ApplicationTest.java
+// Test code
+// ---------
+
+// ApplicationTest.java
 
 public class ApplicationTest {
 .
@@ -822,10 +832,10 @@ public class ApplicationTest {
 }
 
 
-Implementation code
--------------------
+// Implementation code
+// -------------------
 
-Application.java
+// Application.java
 
 public class Application {
 .
@@ -851,7 +861,7 @@ public class Application {
 }
 
 
-Config.java
+// Config.java
 
 package main;
 
@@ -863,7 +873,7 @@ public class Config {
 }
 
 
-NewsFeedReducer.java
+// NewsFeedReducer.java
 
 package main;
 
@@ -885,10 +895,11 @@ public class NewsFeedReducer {
 }
 
 
---------- x -----------
+// --------- x -----------
 
-Test code
----------
+// Test code
+// ---------
+
 NewsFeedReducerTest.java
 
 package main;
@@ -924,7 +935,7 @@ public class NewsFeedReducerTest {
 }
 
 
-NewsFeedTest.java
+// NewsFeedTest.java
 .
 .
 .
@@ -938,8 +949,8 @@ public class NewsFeedTest {
 .
 }
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
 package main;
 
@@ -961,10 +972,10 @@ public class NewsFeedReducer {
 }
 
 
-----------x----------
+// ----------x----------
 
-Test code
----------
+// Test code
+// ---------
 
 ApplicationTest.java
 
@@ -987,12 +998,12 @@ public class ApplicationTest {
     }
 }
 
-----------x----------
+// ----------x----------
 
-Test code
----------
+// Test code
+// ---------
 
-ApplicationTest.java
+// ApplicationTest.java
 
 public class ApplicationTest {
 .
@@ -1039,10 +1050,10 @@ public class ApplicationTest {
 .
 }
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-NewsFeedPaginator.java
+// NewsFeedPaginator.java
 
 package main;
 
@@ -1058,7 +1069,8 @@ public class NewsFeedPaginator {
 }
 
 
-Config.java
+// Config.java
+
 package main;
 
 public class Config {
@@ -1069,7 +1081,7 @@ public class Config {
 }
 
 
-Application.java
+// Application.java
 
 public class Application {
 .
@@ -1097,12 +1109,12 @@ public class Application {
 }
 
 
-----------x----------
+// --------x----------
 
-Test code
----------
+// Test code
+// ---------
 
-NewsFeedPaginatorTest.java
+// NewsFeedPaginatorTest.java
 
 package main;
 
@@ -1187,10 +1199,10 @@ public class NewsFeedPaginatorTest {
 }
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-NewsFeedPaginator.java
+// NewsFeedPaginator.java
 
 package main;
 
@@ -1211,10 +1223,11 @@ public class NewsFeedPaginator {
 }
 
 
-----------x----------
+// --------x----------
 
-Test code
----------
+// Test code
+// ---------
+
 public class NewsFeedTest {
 
     private final NewsFeedEndpoints endpoint = Config.getNewsFeedEndpoints();
@@ -1272,10 +1285,10 @@ public class NewsFeedTest {
     }
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-NewsFeedEndpoints.java
+// NewsFeedEndpoints.java
 
 package main;
 
@@ -1294,7 +1307,7 @@ public interface NewsFeedEndpoints {
 }
 
 
-Config.java
+// Config.java
 
 package main;
 
@@ -1306,16 +1319,17 @@ public class Config {
 
 }
 
-Application.java
+
+// Application.java
 
 public class Application implements NewsFeedEndpoints {
 
-@Override - on a number of implementation methods
+@Override - on a number of //  Implementation methods
 
 
----------x----------
+-// --------x----------
 
-Test code
+// Test code
 ---------
 
 PersistentDbReaderTest.java 
@@ -1341,10 +1355,10 @@ public class PersistentDbReaderTest {
 }
 
 
-Implementation code
--------------------
+//  Implementation code
+// -------------------
 
-PersistentDbReader.java
+// PersistentDbReader.java
 
 package thirdparty;
 
@@ -1433,7 +1447,7 @@ public class PersistentDbReader implements DbReader {
 }
 
 
-InMemoryDbReader.java
+// InMemoryDbReader.java
 
 public class InMemoryDbReader implements DbReader {
 
@@ -1453,4 +1467,3 @@ public class InMemoryDbReader implements DbReader {
 .
 .
 }
-
